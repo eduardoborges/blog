@@ -3,14 +3,16 @@ languageCode = 'pt-br'
 theme = "archie"
 title = 'Edu Blog'
 copyright = "© Eduardo Borges"
+description = ""
+tags = ["blog","simple","responsive","minimal","tags","personal","clean","shortcodes"]
 
 
 paginate=3 # articles per page
 
 [params]
-	mode="auto" # color-mode → light,dark,toggle or auto
-	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
+mode="auto" # color-mode → light,dark,toggle or auto
+useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+subtitle = "o blogzinho do edu. as vezes coisas úteis, as vezes besteirol. vou tentar escrever coisas relevantes sobre javascript."
 
 # Code Highlight
 pygmentsstyle = "monokai"
