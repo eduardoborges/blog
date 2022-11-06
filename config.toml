@@ -1,43 +1,36 @@
 baseURL = 'https://blog.eduardoborges.dev'
-languageCode = 'pt-br'
-theme = "archie"
-title = 'Edu Blog'
-copyright = "© Eduardo Borges"
-description = ""
-tags = ["blog","simple","responsive","minimal","tags","personal","clean","shortcodes"]
-
-
-paginate=3 # articles per page
-
-[params]
-mode="auto" # color-mode → light,dark,toggle or auto
-useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-subtitle = "o blogzinho do edu. as vezes coisas úteis, as vezes besteirol. vou tentar escrever coisas relevantes sobre javascript."
-
-# Code Highlight
-pygmentsstyle = "monokai"
+languageCode = 'pt-BR'
+title = 'edu blog'
+pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+
+paginate=5 # articles per page
+
+[params]
+mode="toggle" # color-mode → light,dark,toggle or auto
+subtitle = "o blogzinho do edu. as vezes coisas úteis, as vezes besteirol. vou tentar escrever coisas relevantes sobre javascript."
+favicon = "https://eduardoborges.dev/favicon.png"
+
 
 [[params.social]]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/eduardoborges"
 
+[[params.social]]
+name = "Linkedin"
+icon = "linkedin"
+url = "https://linkedin.com/in/euduardoborges"
+
+[[params.social]]
+name = "Linkedin"
+icon = "music"
+url = "https://spotify.com"
+
+
 # Main menu Items
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "All posts"
+name = "publicaçoes"
 url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "GitHub"
-icon = "github"
-url = "https://twitter.com/dudao_borges"
-weight = 3

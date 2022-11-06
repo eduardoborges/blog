@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "hugo server --buildDrafts",
-    "build": "hugo --destination dist",
+    "build": "hugo --destination dist --minify",
     "build:server": "npx serve dist"
   },
   "keywords": [],

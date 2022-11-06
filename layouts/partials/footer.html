@@ -1,0 +1,16 @@
+<footer>
+  <div class="footer-info">
+    2022 - {{ dateFormat "2006" now }} eduardo borges |
+
+    built with <a href="https://gohugo.io">hugo</a> & <a
+    href="https://github.com/athul/archie">archie theme</a> fork
+  </div>
+</footer>
+{{ if not .Site.IsServer }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+
+<script src="{{ $.Site.BaseURL }}/js/main.js"></script>
+<script>
+  feather.replace()
+</script>

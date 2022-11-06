@@ -6,9 +6,11 @@
 		{{ range .Site.Menus.main }}
 		<a href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
-		{{ if eq .Site.Params.mode "toggle" -}}
-        | <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
-		<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
-		{{ end }}
+		
+		{{- range $index, $key := .Site.Params.Social -}}
+		<a href="{{ $key.url }}" title="{{ $key.name }}" style="margin: 0 5px;">
+			<i data-feather="{{ $key.icon }}"></i>
+		</a>
+		{{- end -}}
 	</nav>
 </header>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "header.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "head.html" . }}
+			
+			<main>
+				<div class="site-description">
+					{{- if isset .Site.Params "subtitle" -}}
+					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
+					{{- end -}}
+				</div>
+        <div class="container" style="margin: 20vh 0">
+          <h1 class="title" style="font-size: 100px; margin: 0;">404</h1>
+          <p style="font-size: 40px;">tá perdido? <a href="/">volte ao início</a> </p>
+
+          
+        </div>
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+		
+	</body>
+</html>

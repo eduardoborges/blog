@@ -11,8 +11,11 @@
 html {
   color: #232333;
   font-family: var(--font), monospace;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
 }
 
 body {

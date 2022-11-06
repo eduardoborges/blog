@@ -7,10 +7,18 @@
 			
 			<main class="list">
 				<div class="site-description">
-					{{- if isset .Site.Params "subtitle" -}}
-					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
-					{{- end -}}
+					<p>
+						Head of Frontend Enginering @ <a href="https://stone.co">Stone.Co</a>.
+						Previously @ <a href="https://capitual.com" rel="norefer">Capitual</a>, working on product development, technical leadership and management on the final customer teams services and apps.
+						<br/>
+						<strong>Brazilian. Latino. Community Lover. GDG Organizer.</strong>
+					</p>
 				</div>
+				<p>
+					<i data-feather="music"></i> listen to <a href="" id="last-played">loading...</a>
+					<small>by spotify</small>
+				</p>
+
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
