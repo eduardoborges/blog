@@ -21,24 +21,44 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.105.0'
           
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.5.1
+      - uses: actions/setup-node@v3.5.1
         with:
           node-version: '18.x'
           
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Build with Hugo
-        run: npm run build
+      - run: npm run build
         
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
-          path: ./dist
+          name: blog-build
+          path: dist
+    
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CF_TOKEN }}
+    steps:
+      - uses: actions/setup-node@v3.5.1
+
+      - uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
+
+        with:
+          name: blog-build
+
+      - run: ls -la
+      
+      - run: |
+          npm install -g wrangler 
+          npx wrangler pages deployment create dist --project-name=blog
+
+
+
+  
   
