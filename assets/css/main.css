@@ -33,7 +33,7 @@ body {
 }
 
 p {
-  font-family: 'Fantasque Sans Mono', sans-serif;
+  font-family: var(--font), monospace;
   line-height: 1.5;
 }
 
@@ -249,7 +249,7 @@ article .title {
 }
 
 .callout p {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--font), monospace;
   margin: 0;
 }
 
