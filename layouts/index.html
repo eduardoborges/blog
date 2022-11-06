@@ -9,15 +9,19 @@
 				<div class="site-description">
 					<p>
 						Head of Frontend Enginering @ <a href="https://stone.co">Stone.Co</a>.
-						Previously @ <a href="https://capitual.com" rel="norefer">Capitual</a>, working on product development, technical leadership and management on the final customer teams services and apps.
-						<br/>
+						Previously @ <a href="https://capitual.com" rel="norefer">Capitual</a>, working on product development,
+						technical leadership and management on the final customer teams services and apps.
 						<strong>Brazilian. Latino. Community Lover. GDG Organizer.</strong>
+						You can find me on <a href="https://linkedin.com/in/euduardoborges"><i data-feather="linkedin"></i> linkedin</a>, 
+						and  <a href="https://github.com/eduardoborges"><i data-feather="github"></i> github</a>.
 					</p>
 				</div>
+
 				<p>
 					<i data-feather="music"></i> listen to <a href="" id="last-played">loading...</a>
 					<small>by spotify</small>
 				</p>
+
 
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}

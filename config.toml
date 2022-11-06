@@ -13,24 +13,16 @@ subtitle = "o blogzinho do edu. as vezes coisas úteis, as vezes besteirol. vou 
 favicon = "https://eduardoborges.dev/favicon.png"
 
 
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/eduardoborges"
-
-[[params.social]]
-name = "Linkedin"
-icon = "linkedin"
-url = "https://linkedin.com/in/euduardoborges"
-
-[[params.social]]
-name = "Linkedin"
-icon = "music"
-url = "https://spotify.com"
-
-
 # Main menu Items
 
 [[menu.main]]
-name = "publicaçoes"
+name = "home"
+url = "/"
+
+[[menu.main]]
+name = "posts"
 url = "/posts"
+
+[[menu.main]]
+name = "tags"
+url = "/tags"
