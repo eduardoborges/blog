@@ -1,0 +1,2 @@
+# Just My Blog, folks
+
