@@ -48,12 +48,11 @@ jobs:
       - uses: actions/checkout@v3
 
       - uses: actions/download-artifact@v3
-
         with:
           name: blog-build
 
       - run: ls -la
-      
+
       - run: |
           npm install -g wrangler 
           npx wrangler pages deployment create dist --project-name=blog
