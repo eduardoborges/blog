@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx hugo server --buildDrafts",
+    "build": "npx hugo --minify --destination dist",
+    "build:server": "npx serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
