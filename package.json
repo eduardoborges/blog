@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx hugo server --buildDrafts",
-    "build": "npx hugo --minify --destination dist",
+    "start": "hugo server --buildDrafts",
+    "build": "hugo --minify --destination dist",
     "build:server": "npx serve dist"
   },
   "keywords": [],
