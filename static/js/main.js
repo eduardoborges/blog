@@ -4,16 +4,16 @@ const token = "BQAWNE0rk-MgLrW6QvzZKM9pt9sxE057mP7FbhJcu3Ky4KV5T6ZEb7dVZ5I_63fXP
 
 const el = document.getElementById("last-played");
 
-(async ()=>{
+(async () => {
   try {
-    const data = await fetch("https://api.spotify.com/v1/me/player/recently-played?limit=1", {
-      headers: {
-        Authorization: "Bearer " + token
-      }
-    }).then(r => r.json());
-    console.log(data);
-    el.innerText = String(data.items[0].track.artists[0].name).toLowerCase() + " - " + String(data.items[0].track.name).toLowerCase();
-    el.href = data.items[0].track.external_urls.spotify;
+    const data = await fetch("https://tools.borges.workers.dev/recent-tracks").then(r => r.json());
+
+    const name = String(data.recenttracks.track[0].name);
+    const artist = String(data.recenttracks.track[0].artist["#text"]);
+    const url = String(data.recenttracks.track[0].url);
+
+    el.innerText = name.toLowerCase() + " - " + artist.toLowerCase();
+    el.href = url;
   } catch (error) {
     el.innerText = "ops... something went wrong";
   }
