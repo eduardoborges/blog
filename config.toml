@@ -1,6 +1,6 @@
 baseURL = 'https://blog.eduardoborges.dev'
 languageCode = 'pt-BR'
-title = 'edu blog'
+title = 'blog.eduardoborges'
 pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
