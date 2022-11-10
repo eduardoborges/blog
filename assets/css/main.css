@@ -6,10 +6,11 @@
   --hovercolor:  var(--maincolor);
   --darkMaincolor: var(--maincolor);
   --font: 'Fantasque Sans Mono';
+  --dark: #1c1c1b;
 }
 
 html {
-  color: #232333;
+  color: var(--dark);
   font-family: var(--font), monospace;
   font-size: 17px;
   line-height: 1.6em;

@@ -1,17 +1,17 @@
 body {
   color: white;
-  background-color: #202124;
+  background-color: var(--dark);
 }
 
 ::-moz-selection {
-  background: blue;
-  color: #fff;
+  background: var(--maincolor);
+  color: var(--dark);
   text-shadow: none;
 }
 
 ::selection {
-  background: red;
-  color: #fff;
+  background: var(--maincolor);
+  color:var(--dark);
   text-shadow: none;
 }
 
