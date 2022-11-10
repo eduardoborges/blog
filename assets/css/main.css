@@ -1,10 +1,10 @@
 /* Markdown */
 :root {
-  --maincolor: red;
-  --bordercl: rebeccapurple;
-  --callouctcolor: dodgerblue;
-  --hovercolor: navy;
-  --darkMaincolor: #35ca5b;
+  --maincolor: #41fd84;
+  --bordercl: #bafee1;
+  --callouctcolor: #b0b4be;
+  --hovercolor:  var(--maincolor);
+  --darkMaincolor: var(--maincolor);
   --font: 'Fantasque Sans Mono';
 }
 
