@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+.color {
+  color: var(--maincolor);
+}
+
 a:hover {
   background-color: var(--hovercolor);
   color: #fff;
@@ -71,7 +75,7 @@ ul li {
   text-indent: -2ch;
 }
 
-ul>li::before {
+ul > li::before {
   content: '* ';
   font-weight: bold;
 }
@@ -169,32 +173,32 @@ h6 {
 
 h1::before {
   color: var(--maincolor);
-  content: '# ';
+  content: '#/\ ';
 }
 
 h2::before {
   color: var(--maincolor);
-  content: '## ';
+  content: '##/';
 }
 
 h3::before {
   color: var(--maincolor);
-  content: '### ';
+  content: '###/';
 }
 
 h4::before {
   color: var(--maincolor);
-  content: '#### ';
+  content: '####/';
 }
 
 h5::before {
   color: var(--maincolor);
-  content: '##### ';
+  content: '#####/';
 }
 
 h6::before {
   color: var(--maincolor);
-  content: '###### ';
+  content: '######/';
 }
 
 .meta {
