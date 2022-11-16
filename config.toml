@@ -1,23 +1,17 @@
-baseURL = 'https://blog.eduardoborges.dev'
+baseURL = 'https://eduardoborges.dev'
 languageCode = 'pt-BR'
-title = 'blog.eduardoborges'
+title = 'eduardo blog'
+
 pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-paginate=5 # articles per page
+paginate=5
 
 [params]
-mode="toggle" # color-mode → light,dark,toggle or auto
-subtitle = "o blogzinho do edu. as vezes coisas úteis, as vezes besteirol. vou tentar escrever coisas relevantes sobre javascript."
-favicon = "https://eduardoborges.dev/favicon.png"
-
+favicon = "favicon.png"
 
 # Main menu Items
-
-[[menu.main]]
-name = "home"
-url = "/"
 
 [[menu.main]]
 name = "posts"
