@@ -6,9 +6,16 @@
   "scripts": {
     "start": "hugo server --buildDrafts",
     "build": "hugo --destination dist --minify",
+    "postbuild": "npx zx ./scripts/generateThumbs.mjs",
     "build:server": "npx serve dist"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer-core": "^19.2.2",
+    "@types/sharp": "^0.31.0",
+    "csv-parse": "^5.3.2",
+    "zx": "^7.1.1"
+  }
 }

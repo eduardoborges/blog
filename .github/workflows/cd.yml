@@ -1,38 +1,27 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy & Deploy
-
+name: Deploy
 on:
-  # Runs on pushes targeting the default branch
+  workflow_dispatch:
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # Build job
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      PUPPETEER_EXEC_PATH: "/usr/bin/chromium"
     steps:
-      - uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.105.0'
-          
-      - uses: actions/setup-node@v3.5.1
-        with:
-          node-version: '18.x'
-          
       - uses: actions/checkout@v3
-
+      - uses: actions/setup-node@v3.5.1
+      - run: sudo snap install chromium
+      - run: sudo snap install hugo
+      - run: npm i -g zx
+      - run: npm install
       - run: npm run build
-        
       - uses: actions/upload-artifact@v3
         with:
           name: blog-build
@@ -46,15 +35,11 @@ jobs:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CF_TOKEN }}
     steps:
       - uses: actions/setup-node@v3.5.1
-
       - uses: actions/checkout@v3
-
       - uses: actions/download-artifact@v3
         with:
           name: blog-build
-
       - run: ls -la
-
       - run: |
           npm install -g wrangler 
           npx wrangler pages deployment create . --project-name=blog

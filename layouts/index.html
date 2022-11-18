@@ -8,18 +8,20 @@
 			<main class="list">
 				<div class="site-description">
 					<p>
-						Staff Frontend Engineer @ <a href="https://www.stone.co">Stone.Co</a>.
-						Previously @ <a href="https://capitual.com" rel="norefer">Capitual</a>, working on product development,
-						technical leadership and management on the final customer teams services and apps.
-						<strong>Brazilian. Latino.</strong>
-						You can find me on <a href="https://linkedin.com/in/euduardoborges"><i data-feather="linkedin"></i> linkedin</a>, 
-						and  <a href="https://github.com/eduardoborges"><i data-feather="github"></i> github</a>.
+						Staff Engineer <b class="color">@</b> <a href="https://www.stone.co">Stone.Co</a>,
+						revolucionando o mercado de pagamentos, crédito e bancário no Brasil.
+						Antes disso, Engineering Manager <b class="color">@</b> <a href="https://capitual.com" rel="norefer">Capitual</a>,
+						gerenciando times em produtos que traziam o que há de melhor em moedas centralizadas e descentralizadas.
+						<br>
+						<strong>Brasileiro. Baiano. <a href="https://pt.wikipedia.org/wiki/Vaqueiro" referrerpolicy="no-referrer">Ex-vaqueiro</a></strong>.
+						Eu tenho <a href="https://linkedin.com/in/euduardoborges"><i data-feather="linkedin"></i> linkedin</a>
+						e  <a href="https://github.com/eduardoborges"><i data-feather="github"></i> github</a>.
 					</p>
 				</div>
 
 				<p>
-					<b class="color">#/ </b>listen to <a href="" id="last-played">loading...</a>
-					<small> • scrobbled by lastfm</small>
+					<b class="color">#/ </b>ouvindo <a href="" id="last-played">bip bop carregando...</a>
+					<small> • rastreado por lastfm</small>
 				</p>
 
 
@@ -28,7 +30,7 @@
 				{{ range $paginator.Pages }}
 				<section class="list-item">
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">RASCUNHO</span> {{ end }}</time>
 					<br><div class="description">
 						{{ if isset .Params "description" }}
 						{{ .Description }}

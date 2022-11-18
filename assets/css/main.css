@@ -3,7 +3,7 @@
   --maincolor: #41fd84;
   --bordercl: #bafee1;
   --callouctcolor: #b0b4be;
-  --hovercolor:  var(--maincolor);
+  --hovercolor: var(--maincolor);
   --darkMaincolor: var(--maincolor);
   --font: 'Fantasque Sans Mono';
   --dark: #1c1c1b;
@@ -34,8 +34,12 @@ body {
 }
 
 p {
-  font-family: var(--font), monospace;
+  font-family: var(--font);
   line-height: 1.5;
+}
+
+article h1 {
+  font-size: x-large;
 }
 
 hr {
@@ -75,7 +79,7 @@ ul li {
   text-indent: -2ch;
 }
 
-ul > li::before {
+ul>li::before {
   content: '* ';
   font-weight: bold;
 }
@@ -305,6 +309,11 @@ svg {
 .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
+}
+
+.highlight pre code{
+  font-family: var(--font);
+  font-size: 16px;
 }
 
 .highlight pre code[class*="language-"] {
