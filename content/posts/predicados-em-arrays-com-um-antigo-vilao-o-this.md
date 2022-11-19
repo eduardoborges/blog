@@ -2,7 +2,7 @@
 title: "Predicados de busca em Arrays com um antigo vilão, o `this`"
 date: 2022-11-17T23:19:30-03:00
 slug: "predicados-em-arrays-com-um-antigo-vilao-o-this"
-tag: javascript, performance
+tags: javascript, performance
 draft: false
 ---
 
@@ -11,7 +11,6 @@ draft: false
 ## Prefácio
 
 É, o `this` é odiado entre quase todos os *devs* do *javascripto*, talvez seja o elemento mais odiado e se você ainda não odeia, ainda vai odiar. A razão é bem conhecida, seu comportamento e valor é meio estranho, assim como todo JS, mas ele em especial pois [depende do contexto que se encontra](https://www.30secondsofcode.org/articles/s/javascript-this), ou seja, do objeto que está em execução naquele momento. Vejamos alguns exemplos:
-
 
 ```javascript
 console.log(this) // window
@@ -55,7 +54,7 @@ const obj = {
 const anotherObj = Object.create(obj);
 anotherObj.foo = 1;
 
-console.log(myObj.fn()); // { foo: 1 }
+console.log(anotherObj.fn()); // { foo: 1 }
 ```
 
 Então, podemos concluir que é uma faca de *dois legumes*, e pega muita gente. Mas capturar referências do objeto em execução muitas vezes pode simplificar coisinhas do cotidiano. 
@@ -63,7 +62,6 @@ Então, podemos concluir que é uma faca de *dois legumes*, e pega muita gente. 
 ## Arrays feat: arrays
 
 Observe o seguinte bloco código:
-
 
 ```javascript
 const movies = [
