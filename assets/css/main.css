@@ -86,8 +86,8 @@ ul>li::before {
 
 /* Images */
 img {
-  border: 3px solid #ececec;
   max-width: 100%;
+  align-self: center;
 }
 
 figure {
@@ -309,6 +309,10 @@ svg {
 .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
+}
+
+.highlight pre {
+  border-radius: 5px;
 }
 
 .highlight pre code{

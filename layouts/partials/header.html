@@ -34,7 +34,7 @@
 	
 	{{ $fontstyle := resources.Get "css/fonts.css" | fingerprint }}
 	<link href="{{ $fontstyle.Permalink }}" rel="stylesheet">
-
+	
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />
 
