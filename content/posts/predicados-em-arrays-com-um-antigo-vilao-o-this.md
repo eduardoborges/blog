@@ -10,7 +10,7 @@ draft: false
 
 ## Prefácio
 
-É, o `this` é odiado entre quase todos os *devs* do *javascripto*, talvez seja o elemento mais odiado e se você ainda não odeia ainda vai odiar. A razão é bem conhecida, seu comportamento e valor é meio estranho, assim como todo JS, mas ele em especial pois [depende do contexto que se encontra](https://www.30secondsofcode.org/articles/s/javascript-this), ou seja, do objeto que está em execução naquele momento. Vejamos alguns exemplos:
+É, o `this` é odiado entre quase todos os *devs* do *javascripto*, talvez seja o elemento mais odiado e se você ainda não odeia, ainda vai odiar. A razão é bem conhecida, seu comportamento e valor é meio estranho, assim como todo JS, mas ele em especial pois [depende do contexto que se encontra](https://www.30secondsofcode.org/articles/s/javascript-this), ou seja, do objeto que está em execução naquele momento. Vejamos alguns exemplos:
 
 
 ```javascript
@@ -58,7 +58,7 @@ anotherObj.foo = 1;
 console.log(myObj.fn()); // { foo: 1 }
 ```
 
-Então podemos concluir que é uma faca de *dois legumes*, e pega muita gente. Mas capturar referências do objeto em execução muitas vezes pode simplificar coisinhas do cotidiano. 
+Então, podemos concluir que é uma faca de *dois legumes*, e pega muita gente. Mas capturar referências do objeto em execução muitas vezes pode simplificar coisinhas do cotidiano. 
 
 ## Arrays feat: arrays
 
@@ -92,7 +92,7 @@ function findYear21Century() {
 
 ```
 
-Basicamente uma lista de filmes que eu gosto muito e algumas funções que retorna uma versão filtrada da mesma lista, simples né? É a forma que geralmente implementamos **mas** e o **reuso????**
+Basicamente, uma lista de filmes que eu gosto muito e algumas funções que retorna uma versão filtrada da mesma lista, simples né? É a forma que geralmente implementamos **mas** e o **reuso????**
 
 Podemos reescrever uma das funções fazendo *curring*, assim:
 
