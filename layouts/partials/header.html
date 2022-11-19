@@ -17,7 +17,7 @@
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 	
 	{{- if .IsHome -}}
-	<!-- <meta property="og:image" content="https://post-image-generator.borges.workers.dev/"/> -->
+	<meta property="og:image" content="{{ $.Site.BaseURL }}/me.jpeg"/>
 	{{- else -}}
 	<meta property="og:image" content="{{ $.Site.BaseURL }}/thumbs/{{.Slug}}.png" />
 	{{- end -}}

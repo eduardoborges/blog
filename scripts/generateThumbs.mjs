@@ -40,7 +40,7 @@ Promise.all(posts.map(async (post) => {
   const browser = await launch({ args: ['--no-sandbox'],
     executablePath: process.env.PUPPETEER_EXEC_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    headless: false,
+    // headless: false,
   });
   const page = await browser.newPage();
   await page.setContent(svg);
@@ -52,7 +52,7 @@ Promise.all(posts.map(async (post) => {
   return browser.close();
 })).then(async () => {
   console.log("\n📁 Moving files to static folder  ");
-  await $`mkdir ./dist/thumbs`.quiet();
+  await $`mkdir -p ./dist/thumbs`.quiet();
   await $`mv -f .tmp/thumbs/* ./dist/thumbs/`.quiet();
   console.log('✅ All Done! ✨')
 })
