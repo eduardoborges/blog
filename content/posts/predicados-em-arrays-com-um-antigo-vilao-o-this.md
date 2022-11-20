@@ -29,7 +29,7 @@ el.addEventListener('click', function() {
 });
 ```
 
-Em um construtor o `this` se refere ao objeto construído:
+Em um construtor, o `this` se refere ao objeto construído:
 
 ```javascript
 class MyClass {
@@ -42,7 +42,7 @@ const obj = new MyClass();
 console.log(obj.x); // 5
 ```
 
-E finalmente em um objeto se refere ao próprio:
+E finalmente, em um objeto se refere ao próprio:
 
 ```javascript
 const obj = {

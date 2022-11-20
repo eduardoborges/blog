@@ -26,6 +26,14 @@ code {
   padding: 0.1em 0.2em;
 }
 
+p code {
+  background-color: #3d415a;
+  color: white;
+  padding: 0.1em 0.2em;
+  border-radius: 5px;
+  font-style: italic;
+}
+
 pre {
   background-color: #272822;
   line-height: 1.4;
