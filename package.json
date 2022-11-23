@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "hugo server --buildDrafts",
+    "dev": "hugo server",
     "build": "hugo --destination dist --minify",
     "postbuild": "npx zx ./scripts/generateThumbs.mjs",
     "build:server": "npx serve dist"
