@@ -174,7 +174,6 @@ h5,
 h6 {
   font-size: 1.2rem;
   margin-top: 2em;
-  color: var(--bordercl) !important;
 }
 
 h1 {
@@ -202,7 +201,7 @@ h3::before,
 h4::before,
 h5::before,
 h6::before {
-  color: var(--blue);
+  color: var(--maincolor);
   content: '#/! ';
 }
 
