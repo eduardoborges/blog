@@ -7,6 +7,7 @@
   --darkMaincolor: var(--maincolor);
   --font: 'Fantasque Sans Mono';
   --dark: #1c1c1b;
+  --blue: blue;
 }
 
 html {
@@ -173,36 +174,36 @@ h5,
 h6 {
   font-size: 1.2rem;
   margin-top: 2em;
+  color: var(--bordercl) !important;
 }
 
-h1::before {
-  color: var(--maincolor);
-  content: '#/!\ ';
+h1 {
+  font-size: 1.6rem;
 }
 
-h2::before {
-  color: var(--maincolor);
-  content: '##/!';
+h2 {
+  font-size: 1.4rem;
 }
 
-h3::before {
-  color: var(--maincolor);
-  content: '###/!';
+h3 {
+  font-size: 1.2rem;
 }
 
-h4::before {
-  color: var(--maincolor);
-  content: '####/!';
+h4 {
+  font-size: 1rem;
 }
 
-h5::before {
-  color: var(--maincolor);
-  content: '#####/!';
+h5 {
+  font-size: 0.8rem;
 }
-
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
 h6::before {
-  color: var(--maincolor);
-  content: '######/!';
+  color: var(--blue);
+  content: '#/! ';
 }
 
 .meta {
