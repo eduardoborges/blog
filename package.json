@@ -4,21 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "hugo server --buildDrafts",
+    "start": "npx serve dist",
+    "dev": "hugo server --buildDrafts",
     "build": "hugo --destination dist --minify",
-    "postbuild": "npx zx ./scripts/generateThumbs.mjs",
-    "build:server": "npx serve dist"
+    "postbuild": "npx zx ./scripts/generateThumbs.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/sharp": "^0.31.0",
     "csv-parse": "^5.3.2",
     "puppeteer-core": "^19.2.2",
     "zx": "^7.1.1"
-  },
-  "dependencies": {
-    "benchmark": "^2.1.4"
   }
 }

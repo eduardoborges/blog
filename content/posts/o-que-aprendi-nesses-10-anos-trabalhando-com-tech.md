@@ -6,27 +6,33 @@ draft: true
 
 Antes de mais nada agradecer a galera do Boogarins pelo seu [segundo album sensacional](https://open.spotify.com/album/3THs8EgoGs9oSKahSlN4yP?si=GMrkHjedRaeYBhGcwO6poQ) que inspirou esse post.
 
-Em 2023 fazem 10 anos que entreguei um projeto sério e que impactou em uma organização. Nesse tempo eu aprendi lições que por vezes foram duras de aceitar, outras, confirmaram medos. Mas o que todas elas tem em comum é que com certeza não só me fez ser um melhor engenheiro de software como uma pessoa melhor.
+Em 2023 fazem 10 anos que entreguei um projeto sério e que impactou uma organização. Nesse tempo, eu aprendi lições que por vezes foram duras de aceitar, outras, confirmaram medos. Mas o que todas elas tem em comum é que com certeza, não só me fez ser um melhor engenheiro de software, como uma pessoa melhor.
 
-Enquanto estava escrevendo este lindo post notei que não precisei encher linguiça para chegar em 10 itens, eu precisei remover muita coisa ná verdade. O que isso significa? Absolutamente nada, apenas quis comentar, ~afinal o blog é meu~.
+Essa postagem não tem um objetivo muito claro, eu poderia chamar isso de apenas um desabafo.
 
 ## Pessoas: o elemento mais importante
 
-Muito frequentemente ouvia comentários do tipo "nossa mas deve ser bom não lidar com gente, ficar só ali brigando com a maquina". Pois é, aí que você se engana. Dificilmente você, sozinho, vai entregar um software que impacte de forma significante uma organização e/ou um grande grupo de usuários.
+Muito frequentemente ouvia comentários do tipo: "nossa mas deve ser bom não lidar com gente, ficar só ali brigando com a maquina".  Dificilmente você, sozinho, vai entregar um software que impacte de forma significante uma organização e/ou um grande grupo de usuários.
+
+Com o tempo você vai valorizando mais uma boa relação com seus colegas e percebendo como isso melhora performance do time como um todo.
 
 
 ## Ouvir mais
 
-..
+Não é só ouvir a opinião técnica do coleguinha, **é de fato testar ideias jogadas na mesa**. Por mais sênior que você seja, você não está sempre certo. Aprender a engolir o ego e dar espaço para outras ideias é essencial e uma baita habilidade não técnica. 
 
+
+## Você não sabe de tudo
+
+E nunca vai saber. É tudo tão volátil, rápido. Não dá pra acompanhar. Ter a simplicidade de levantar a mão e dizer *"galera, não sei fazer isso aqui, alguém me ajuda?"* foi uma coisa que por muito tempo tinha vergonha. Com o tempo fui entendendo que isso faz parte do trabalho e normalizando essas situações. O mesmo serve para ajudar outras pessoas.
 
 ## Tudo é política, principalmente software
 
-Software é uma coisa que usamos o tempo todo, desde o celular até sua tv da sala. É criado por... advinha? Isso mesmo, **pessoas**, e reflete as suas crenças e valores, incluindo questões políticas. Imagina aí se um aplicativo de celular é feito para proteger a privacidade dos usuários ou coletar dados sobre eles e vendê-los para anunciantes. Isso é uma questão política importante. Também, algoritmos de decisão usados em muitas áreas, como crédito, emprego e saúde, podem reforçar desigualdades existentes na sociedade, ao serem treinados com dados históricos incompletos e limitados.
+Software é criado por... advinha? Isso mesmo, **pessoas**. A influência de suas crenças e valores pode refletir na organização e/ou projeto, incluindo questões políticas. Venda de dados, algoritmos de decisão, impactos negativos na sociedade de váaarias formas. Você tem que estar alinhado com a empresa e projeto que você trabalha. Também, algoritmos de decisão usados em muitas áreas, como crédito, emprego e saúde, podem reforçar desigualdades existentes na sociedade, ao serem treinados com dados historicamente incompletos e limitados. Afinal, você vai fechar os olhos sobre o impacto que seu trabalho faz na sociedade?
 
-Nem mencionei o software open-source, que se baseia no princípio de que o código-fonte deve ser livremente disponível para que qualquer pessoa. Isso tem influência política, pois ele pode ser uma importante ferramenta para a promoção da liberdade e da privacidade, permitindo aos usuários controlar e entender melhor como seus dados são coletados e usados. É um meio de democratizar o acesso e o controle sobre a tecnologia, o que pode contribuir para a construção de sociedades mais justas e equitativas.
+Isso porque nem vou mencionar software sobre open-source... Fica para a próxima. Merece uma postagem mais completa.
 
-## Entender sobre privilégios
+## 4. Entender sobre privilégios
 
 Você já olhou em volta de você e só viu homem branco? Pois é, faz essa reflexão. Computação é uma área extremamente machista e anti-diversidade. Irônico diria, pois veja só quem são os pais/mães da computação. Já vi relatos de candidatos distribuírem 2 versões de currículo, um com nome masculino e outro feminino e advinha? 80% mais convites para entrevistas na versão masculina. Exatamente o mesmo currículo.
 
@@ -34,11 +40,11 @@ E você acha que quem tem mais performance, o amiguinho que não precisa nem faz
 
 A ideia aqui não é dizer quem está certo ou errado. Ou dar soluções. **É saber que esses problemas existem, e que isso muda tudo**.
 
-## Cuidar do corpo e da mente é essencial
+## Cuidar do corpo e da mente
 
-Melhor, cuidar de um impacta diretamente no outro. Praticar exercícios físicos acho tarefa essencial para a turminha da computação, principalmente para aqueles que trabalham sentados maior parte, ou todo ele, do dia. 
+Melhor, cuidar de um impacta diretamente no outro. Praticar exercícios físicos é tarefa essencial para a turminha da computação, principalmente para aqueles que trabalham sentados maior parte do dia.
 
-Aumenta seu bem estar e ajuda muito na ansiedade. Basta uma caminhadinha no seu bairro ou na academia. Tenta incluir na rotina.
+Aumenta seu bem estar e ajuda muito na ansiedade. Basta uma caminhadinha no seu bairro ou na academia. Tenta incluir na rotina. A tendencia que temos a obesidade é bem grande.
 
 ## Feedbacks são essenciais
 
@@ -46,10 +52,4 @@ Os negativos são meus favoritos. Sou um ser humano, falho. Vejo nos feedbacks n
 
 Claro, a forma que o feedback chega a você importa muito, mas a forma que você recebe, também.
 
-## Cargo não é tão importante
-
-...
-
-
-## Baixar a guarda
 
