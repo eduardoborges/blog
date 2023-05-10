@@ -1,6 +1,6 @@
 baseURL = 'https://eduardoborges.dev'
 languageCode = 'pt-BR'
-title = 'eduardo borges'
+title = 'Eduardo'
 
 pygmentsstyle = "dracula"
 pygmentscodefences = true
@@ -14,9 +14,5 @@ favicon = "/favicon.png"
 # Main menu Items
 
 [[menu.main]]
-name = "posts"
+name = "blog"
 url = "/posts"
-
-[[menu.main]]
-name = "tags"
-url = "/tags"

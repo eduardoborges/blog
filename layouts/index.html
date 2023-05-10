@@ -14,32 +14,32 @@
 						gerenciando times em produtos que traziam o que há de melhor em moedas centralizadas e descentralizadas.
 						<br>
 						<strong>Brasileiro. Baiano. <a href="https://pt.wikipedia.org/wiki/Vaqueiro" referrerpolicy="no-referrer">Ex-vaqueiro</a></strong>.
-						Eu tenho <a href="https://linkedin.com/in/euduardoborges"><i data-feather="linkedin"></i> linkedin</a>
-						e  <a href="https://github.com/eduardoborges"><i data-feather="github"></i> github</a>.
+						<br/>
+						
+						
 					</p>
+					<br/>
+					
 				</div>
+
+				<a href="https://linkedin.com/in/euduardoborges"><i data-feather="linkedin"></i> linkedin</a>
+				<span class="color">•</span>
+				<a href="https://github.com/eduardoborges"><i data-feather="github"></i> github</a>
 
 				<p>
 					<b class="color">#/! </b>ouvindo <a href="" id="last-played">bip bop carregando...</a>
 					<small> • rastreado por lastfm</small>
 				</p>
 
-
+				<h3>Postagens do blog</h3>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
-				<section class="list-item">
-					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">RASCUNHO</span> {{ end }}</time>
-					<br><div class="description">
-						{{ if isset .Params "description" }}
-						{{ .Description }}
-						{{ else }}
-						{{ .Summary }}&hellip;
-						{{ end }}
-					</div>
-					<br/>
-				</section>
+				<li class="post">
+					<a href="{{ .RelPermalink }}">{{.Title}}</a>
+					<span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }}
+					<span class="draft-label">RASCUNHO</span> {{ end }}</span>
+				</li>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
 			</main>

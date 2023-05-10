@@ -1,11 +1,12 @@
-/* Markdown */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500,700,800&display=swap');
+
 :root {
   --maincolor: #41fd84;
   --bordercl: #bafee1;
   --callouctcolor: #b0b4be;
   --hovercolor: var(--maincolor);
   --darkMaincolor: var(--maincolor);
-  --font: 'Fantasque Sans Mono';
+  --font: 'Fantasque Sans Mono', sans-serif;
   --dark: #1c1c1b;
   --blue: blue;
 }
@@ -27,6 +28,9 @@ body {
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* font-size: 28px; */
+    /* line-height: 32px; */
+    letter-spacing: -0.5px;
 }
 
 ::selection {
@@ -37,10 +41,6 @@ body {
 p {
   font-family: var(--font);
   line-height: 1.5;
-}
-
-article h1 {
-  font-size: x-large;
 }
 
 hr {
@@ -158,7 +158,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 1em 0;
+  margin: 2.5em 0;
   line-height: 2.5em;
 }
 
@@ -172,20 +172,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.2rem;
   margin-top: 2em;
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  line-height: 1.2em;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 1em;
 }
 
 h3 {
   font-size: 1.2rem;
+  line-height: 0.8em;
 }
 
 h4 {
@@ -244,11 +247,6 @@ time {
   color: grey;
 }
 
-/* Posts */
-article .title {
-  margin-bottom: 1em;
-}
-
 
 /* Callout */
 .callout {
@@ -274,6 +272,12 @@ article .title {
 .site-description {
   display: flex;
   justify-content: space-between;
+}
+
+.site-description p {
+  font-size: calc(100vw / 100 + 0.8rem);
+  line-height: calc(100vw / 100 + 1.2rem);
+  letter-spacing: -1.2px;
 }
 
 .tags li::before {

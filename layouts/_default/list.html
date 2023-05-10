@@ -5,15 +5,24 @@
 <h1 class="page-title">lista de postagens</h1>
 {{ end }}
 
-<ul class="posts">
-	{{- range .Data.Pages -}}
-	{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
-	<li class="post">
+{{- range .Data.Pages -}}
+{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+
+<section class="list-item">
+	<h2>
 		<a href="{{ .RelPermalink }}">{{.Title}}</a>
-		<span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }}
-		<span class="draft-label">RASCUNHO</span> {{ end }}</span>
-	</li>
-	{{- end -}}
-	{{- end -}}
-</ul>
+	</h2>
+	<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">RASCUNHO</span> {{ end }}</time>
+	<br>
+	<div class="description">
+		{{ if isset .Params "description" }}
+		{{ .Description }}
+		{{ else }}
+		{{ .Summary }}&hellip;
+		{{ end }}
+	</div>
+	<br />
+</section>
+{{- end -}}
+{{- end -}}
 {{ end }}
