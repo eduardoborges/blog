@@ -4,7 +4,7 @@
 		<div class="title">
 			<h1 class="title">{{ .Title }}</h1>
 			<div class="meta">postado em {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">RASCUNHO</span> {{ end }}</div>
-
+			<br>
 			<small>
 			compartilhe no
 			<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank"><i data-feather="linkedin"></i>linkedinho</a>

@@ -1,24 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500,700,800&display=swap');
-
 :root {
-  --maincolor: #41fd84;
-  --bordercl: #bafee1;
-  --callouctcolor: #b0b4be;
-  --hovercolor: var(--maincolor);
-  --darkMaincolor: var(--maincolor);
+  /* fonts */
   --font: 'Fantasque Sans Mono', sans-serif;
-  --dark: #1c1c1b;
-  --blue: blue;
+
+  /* basic colors */
+  --primary: springgreen;
+  --negative: #350bbc;
 }
 
 html {
-  color: var(--dark);
+  color: var(--negative);
+  background-color: white;
   font-family: var(--font), monospace;
   font-size: 17px;
   line-height: 1.6em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: antialiased;
 }
 
 body {
@@ -34,8 +28,8 @@ body {
 }
 
 ::selection {
-  background: var(--maincolor);
-  color: #fff;
+  background: var(--primary);
+  color: var(--negative);
 }
 
 p {
@@ -57,18 +51,18 @@ blockquote {
 }
 
 a {
-  border-bottom: 3px solid var(--maincolor);
+  border-bottom: 3px solid var(--primary);
   color: inherit;
   text-decoration: none;
 }
 
-.color {
-  color: var(--maincolor);
+a:hover {
+  background-color: var(--primary);
+  color: var(--negative);
 }
 
-a:hover {
-  background-color: var(--hovercolor);
-  color: #fff;
+.color {
+  color: var(--primary);
 }
 
 ul {
@@ -204,7 +198,7 @@ h3::before,
 h4::before,
 h5::before,
 h6::before {
-  color: var(--maincolor);
+  color: var(--primary);
   content: '#/! ';
 }
 
@@ -285,7 +279,7 @@ time {
 }
 
 .tags a {
-  border-bottom: 3px solid var(--maincolor);
+  border-bottom: 3px solid var(--primary);
 }
 
 .tags a:hover {

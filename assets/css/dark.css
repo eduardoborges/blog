@@ -1,17 +1,17 @@
-body {
+html {
   color: white;
-  background-color: var(--dark);
+  background-color: var(--negative);
 }
 
 ::-moz-selection {
-  background: var(--maincolor);
-  color: var(--dark);
+  background: var(--);
+  color: var(--negative);
   text-shadow: none;
 }
 
 ::selection {
-  background: var(--maincolor);
-  color:var(--dark);
+  background: var(--);
+  color:var(--negative);
   text-shadow: none;
 }
 
@@ -46,29 +46,25 @@ blockquote {
 }
 
 a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 3px solid var(--primary);
   color: inherit;
 }
 
 a:hover {
-  background-color: var(--darkMaincolor);
-  color: black;
+  background-color: var(--primary);
+  color: var(--negative);
 }
 
-.site-description a {
+/* .site-description a {
   color: #ddd;
-}
-
-.site-description a:hover {
-  color: black;
-}
+} */
 
 .tags a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 3px solid var(--negative);
 }
 
 .tags a:hover {
-  background-color: var(--darkMaincolor);
+  background-color: var(--negative);
   color: black;
 }
 
@@ -82,7 +78,7 @@ a:hover {
 }
 
 .draft-label {
-  color: var(--darkMaincolor);
+  color: var(--negativeMaincolor);
   background-color: blue;
 }
 
