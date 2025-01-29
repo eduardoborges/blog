@@ -13,15 +13,17 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env:
-      PUPPETEER_EXEC_PATH: "/usr/bin/chromium"
+      PUPPETEER_EXEC_PATH: "/usr/bin/google-chrome"
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
 
-      - name: Install Chromium and Hugo
-        run: sudo snap install chromium hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.119.0'
 
       - name: Install Deps
         run: npm ci
