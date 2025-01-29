@@ -22,12 +22,9 @@ jobs:
 
       - name: Install Chromium and Hugo
         run: sudo snap install chromium hugo
-      
-      - name: Install Zx
-        run: npm i -g zx
 
       - name: Install Deps
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
