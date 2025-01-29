@@ -49,7 +49,7 @@
   </foreignObject>
 
   <text>
-    <tspan x="100" y="85%" font-size="25px">Postado em {{ publishDate }}</tspan>
+    <tspan x="100" y="85%" font-size="25px">Postado em {{ date }}</tspan>
   </text>
 
   <defs>
